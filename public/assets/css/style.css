@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor
+{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "navbar"
+    "Toners"
+    "Cartuchos"
+    "Otros"
+    "AcercadeNosotros"
+    "Contactos"
+    "Footer";
+}
+.navbar{
+    height: 500px;
+}
+
+html{
+    height: 100%;
+}
+
+body
+{
+    min-height: 100%;
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    grid-area: navbar;
+    background: url(/assets/img/Fondoheader.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    height: 650px;
+}
+
+.Toners{
+    grid-area: Toners;
+    background-color: #fff;
+    height: 800px;
+}
+
+.imagentoner2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagentoner3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin-bottom: 10px;
+
+}
+
+.imagenesotros{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 30px;
+    margin-top: 80px;
+}
+
+.subtemas2{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.Cartuchos{
+    grid-area: Cartuchos;
+    background-color: #747472;
+    position: relative;
+    height: 550px;
+}
+
+.Otros{
+    grid-area: Otros;
+    background-color: #fff;
+    height: 800px;
+    position: relative;
+}
+
+.AcercadeNosotros{
+    grid-area: AcercadeNosotros;
+    background-color: #747472;
+    position: relative;
+    margin-top: 1000px;
+    height: 600px;
+}
+
+.AcercadeNosotros2{
+    grid-area: AcercadeNosotros;
+    background-color: #747472;
+    height: 600px;
+    margin-bottom: 10px;
+}
+
+.Contactos{
+    grid-area: Contactos;
+    background-color: #fff;
+    position: relative;
+    height: 400px;
+}
+
+.descripnos{
+    color: #fff;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.nos{
+    display: flex;
+    margin-top: 50px;
+}
+
+.Footer{
+    grid-area: Footer;
+    background-color: #747472;
+    position: relative;
+    margin-top: 100px;
+}
+
+.Footer2{
+    grid-area: Footer;
+    background-color: #747472;
+    position: relative;
+    margin-top: 1150px;
+}
+
+.imagentoner{
+    width: 370px;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.toneralign{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imagenotros{
+    width: 370px;
+    height: 290px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.imagen{
+    width: 400px;
+    height: 300px;
+    margin-left: 10px;
+}
+
+.imagencontactos{
+    width: 335px;
+    height: 200px;
+}
+
+#contactos{
+    margin-right: 20px;
+}
+
+#contactos1{
+    margin-left: 35px;
+}
+
+.aligncontact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.descripcontactos{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #5F5D5C;
+}
+
+#correo{
+    text-decoration: none;
+    color: #5F5D5C;
+}
+
+.imagenredes{
+    width: 220px;
+    height: 100px;
+}
+
+#Titulo{
+    text-align: center;
+    margin-top: 130px;
+    font-size: 90px;
+    font-weight: 1000;
+    color: #fff;
+}
+
+@media (min-width: 600px){
+    .contenedor{
+        background: #fff;
+        grid-template-columns: 100%, 100%, 100%, 100%, 100%, 100%, 100%;
+        grid-template-rows: 10px;
+        grid-template-areas: 
+        "navbar" "navbar"
+        "Toners" "Toners"
+        "Cartuchos" "Cartuchos"
+        "Otros" "Otros"
+        "AcercadeNosotros" "AcercadeNosotros"
+        "Contactos" "Contactos"
+        "Footer" "Footer";
+    }
+}
+
+@media (min-width: 900px){
+    .contenedor{
+        background: #fff;
+        grid-template-columns: 100%, 100%, 100%, 100%, 100%, 100%, 100%;
+        grid-template-rows: 10px;
+        grid-template-areas: 
+        "navbar" "navbar" "navbar"
+        "Toners" "Toners" "Toners"
+        "Cartuchos" "Cartuchos" "Cartuhos" 
+        "Otros" "Otros" "Otros"
+        "AcercadeNosotros" "AcercadeNosotros" "AcercadeNosotros"
+        "Contactos" "Contactos" "Contactos"
+        "Footer" "Footer" "Footer";
+    }
+}
+
+.subtemas{
+    text-align: center;
+    font-size: 40px;
+    color: #5F5D5C;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.Eslogans{
+    text-align: center;
+    font-size: 20px;
+    color: #5F5D5C;
+    margin-bottom: 30px;
+}
+
+.descriptoner{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #5F5D5C;
+}
+
+.descripcartuchos{
+    text-align: center;
+    color: #fff;
+}
+
+.lista
+{
+    float: right;
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.lista a{
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 500ms ease;
+    font-size: 17px; 
+}
+
+.lista a:hover{
+    color: #FB681F;
+}
+
+.lista .sublista
+{
+    background: #5F5D5C;
+    box-shadow: 3px 10px 10px rgba(0,0,0,0.2);
+    list-style: none;
+    display: none;
+    margin-top: 0px;
+}
+
+.lista .sublista li a{
+    line-height: 50px;
+}
+
+.navbar ul li a:hover + ul, .navbar .sublista:hover{
+    display: block;
+}
+
+.copyright{
+    margin-top: 38px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.imagenredes{
+    text-align: right;
+}
+
+.redes{
+    margin-left: 950px;
+    padding: 10px;
+}
+
+.alignfooter{
+    display: flex;
+}
+
+#facee{
+    width: 65px;
+    height: 65px;
+    margin-left: 25px;
+}
+
+#Instagram{
+    width: 97px;
+    height: 57px;
+    margin-bottom: 5px;
+}
+
+
+#cartuchos664{
+    width: 40px;
+    height: 40px;
+}
+
+#cartuchos664{
+    width: 40px;
+    height: 40px;
+}
+
+#cartuchos664{
+    width: 310px;
+    height:270px;
+    padding: 10px;
+}
+
+#cartuchos122{
+    width: 400px;
+    height: 320px;
+    padding: 10px;
+}
+
+#cartuchos667{
+    width: 410px;
+    height: 340px;
+    padding: 10px;
+}
+
+.contenido
+{
+    width: 1150px;
+    height: 850px;
+    margin-left: 70px;
+    margin-right: 50px;
+    padding: 1.5em;
+}
+
+
+.logo 
+{
+    margin-top: 150px;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 35px;
+    font-style: italic;
+}
+
+
+.contact-wrapper {
+    box-shadow: 0 0 5px 0 rgba(255, 0, 0, 0.3);
+}
+
+.contact-wrapper > * {
+    padding: 3em;
+}
+
+.contact-form {
+    background:#FF8747;
+}
+
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form p {
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #000;
+    border-bottom: 1px solid #fff;
+}
+
+.contact-form form button {
+    background: #fff;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #5F5D5C;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+
+.contact-info {
+    background: #909090;
+}
+
+
+
+@media(min-width: 700px) {
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+
+.oo{
+    color: #5F5D5C;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.mapa1{
+    float: left;
+}
+
+#mapa{
+    text-align: center;
+    
+}
+
+.anuncio1{
+    float: right;
+}
+
+#anuncio{
+    text-align: center;
+}
+
+.logo11{
+    text-align: center;
+    margin-bottom: 25px;
+}
